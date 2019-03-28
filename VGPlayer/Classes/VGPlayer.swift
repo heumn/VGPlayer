@@ -409,7 +409,7 @@ extension VGPlayer {
                     delegate?.vgPlayer(self, playerFailed: error)
                     displayView.playFailed(error)
                 @unknown default:
-                    <#fatalError()#>
+                    fatalError()
                 }
                 
             } else if keyPath == #keyPath(AVPlayerItem.playbackBufferEmpty){
