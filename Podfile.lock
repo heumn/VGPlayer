@@ -1,0 +1,22 @@
+PODS:
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - "SnapKit (from `git@github.com:alanzeino/SnapKit.git`, branch `xcode102`)"
+
+EXTERNAL SOURCES:
+  SnapKit:
+    :branch: xcode102
+    :git: "git@github.com:alanzeino/SnapKit.git"
+
+CHECKOUT OPTIONS:
+  SnapKit:
+    :commit: 122809d12f0a3ed8323d2e6b3ddc7ec107a6afc9
+    :git: "git@github.com:alanzeino/SnapKit.git"
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 41ee950eca180bc865aab59df8e6459216ed514a
+
+COCOAPODS: 1.5.3

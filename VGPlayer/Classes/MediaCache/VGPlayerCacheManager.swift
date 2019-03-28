@@ -10,9 +10,9 @@ import Foundation
 
 public extension Notification.Name {
     
-    public static var VGPlayerCacheManagerDidUpdateCache = Notification.Name.init("com.vein.VGplayer.CacheManagerDidUpdateCache")
-    public static var VGPlayerCacheManagerDidFinishCache = Notification.Name.init("com.vein.VGplayer.CacheManagerDidFinishCache")
-    public static var VGPlayerCacheManagerDidCleanCache = Notification.Name.init("com.vein.VGplayer.CacheManagerDidCleanCache")
+    static var VGPlayerCacheManagerDidUpdateCache = Notification.Name.init("com.vein.VGplayer.CacheManagerDidUpdateCache")
+    static var VGPlayerCacheManagerDidFinishCache = Notification.Name.init("com.vein.VGplayer.CacheManagerDidFinishCache")
+    static var VGPlayerCacheManagerDidCleanCache = Notification.Name.init("com.vein.VGplayer.CacheManagerDidCleanCache")
 }
 
 open class VGPlayerCacheManager: NSObject {
@@ -21,12 +21,12 @@ open class VGPlayerCacheManager: NSObject {
     static public let VGPlayerCacheErrorKey: String = "VGPlayerCacheErrorKey"
     static public let VGPlayerCleanCacheKey: String = "VGPlayerCleanCacheKey"
     
-    open static var mediaCacheNotifyInterval = 0.1
+    public static var mediaCacheNotifyInterval = 0.1
     
     fileprivate let ioQueue = DispatchQueue(label: "com.vgplayer.ioQueue")
     fileprivate var fileManager: FileManager!
     
-    open static let shared = VGPlayerCacheManager()
+    public static let shared = VGPlayerCacheManager()
     open private(set) var cacheConfig = VGPlayerCacheConfiguration()
     
     public override init() {
